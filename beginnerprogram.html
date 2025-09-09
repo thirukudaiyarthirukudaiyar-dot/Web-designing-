@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Beginner Programs</title>
+<style>
+
+/* Program 1: Styling Text */
+.text-style {
+    font-family: Arial, sans-serif;
+    color: navy;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+/* Program 2: Background and Border */
+.box-style {
+    background-color: #f0f0f0;
+    border: 3px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Program 3: Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 20px;
+}
+
+.flex-item {
+    background-color: coral;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+/* Program 4: Hover Effect */
+.hover-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+.hover-button:hover {
+    background-color: #45a049;
+}
+
+/* Program 5: Simple Animation */
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6347;
+    margin: 20px auto;
+    animation: slide 2s infinite alternate;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100px); }
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="text-style">Welcome to CSS!</h1>
+
+<div class="box-style">This is a styled box</div>
+
+<div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+</div>
+
+<button class="hover-button">Hover Me!</button>
+
+<div class="animated-box"></div>
+
+</body>
+</html>
